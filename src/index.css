@@ -1,5 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
+  background-color: rebeccapurple;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +16,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.react-icon{
+  animation: react-animation 3s linear infinite;
+  overflow: hidden;
+}
+.react-icon svg{
+  margin: auto auto;
+
+}
+@keyframes react-animation{
+  0%{
+    padding-top: 0px;
+  }
+  50%{
+    padding-top: 60px;
+  }
+  100%{
+    padding-top: 0px;
+  }
 }
